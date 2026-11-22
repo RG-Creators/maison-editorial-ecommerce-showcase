@@ -14,7 +14,7 @@
 
 The platform is designed around a modern headless-ready monolithic architecture, pairing a fast Blade/Tailwind frontend with a transactional Laravel 11 core:
 
-`
+```
 +-----------------------------------------------------------------------------------------+
 |                                    STOREFRONT TIER                                      |
 |   - Editorial Lookbook & Curated High-Fashion Collections                               |
@@ -24,17 +24,17 @@ The platform is designed around a modern headless-ready monolithic architecture,
                                              v HTTPS / TLS 1.3
 +-----------------------------------------------------------------------------------------+
 |                                 APPLICATION & API CORE                                  |
-|   - Product Variant Matrix & Dynamic Inventory Allocation (orders, order_items)     |
+|   - Product Variant Matrix & Dynamic Inventory Allocation (orders, order_items)         |
 |   - Razorpay API Order Creation & Cryptographic Signature Verification                  |
 |   - Administrative Inventory Telemetry, Order State Machine & Audit Logging             |
 +--------------------------------------------|--------------------------------------------+
                                              v
 +-----------------------------------------------------------------------------------------+
 |                                  DATABASE RELATIONAL TIER                               |
-|   - Atomic Order Placement with Pessimistic Inventory Locking (FOR UPDATE)            |
+|   - Atomic Order Placement with Pessimistic Inventory Locking (FOR UPDATE)              |
 |   - Foreign-Key Constraint Integrity on Users, Products, Categories, and Transactions   |
 +-----------------------------------------------------------------------------------------+
-`
+```
 
 ---
 
